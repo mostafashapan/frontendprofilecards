@@ -1,0 +1,30 @@
+.vercel
+
+# Ignore environment files
+.env
+
+# Ignore node_modules (dependencies installed via npm/yarn)
+node_modules/
+
+# Ignore logs
+*.log
+
+# Ignore build and cache directories (if applicable)
+build/
+dist/
+.cache/
+
+# Ignore Vercel specific files (if you are using Vercel deployment)
+.vercel/
+
+# Ignore OS-specific files
+Thumbs.db
+.DS_Store
+
+# Ignore package-lock.json (optional, usually kept for consistency)
+# package-lock.json
+
+# Ignore temporary or editor-specific files
+*.swp
+.vscode/
+.idea/

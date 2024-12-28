@@ -1,0 +1,40 @@
+/* App.css */
+
+/* Ensure the HTML and body take up the full height of the viewport */
+html, body {
+  margin: 0;
+ 
+}
+
+/* Container takes up the full height of the viewport */
+
+/* Main content should expand to take up available space */
+main {
+  flex: 1; /* This makes sure the main content grows and pushes the footer down */
+}
+
+/* Footer styles */
+.footer {
+  background-color: #f4f4f4; /* Light gray background */
+  padding: 10px; /* Adequate padding for spacing */
+  text-align: center;
+  border-top: 1px solid #ccc; /* Optional top border */
+  font-size: 15px; /* Default font size */
+  color: #666;
+   /* Dark gray text color */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .footer {
+    font-size: 14px; /* Adjusted font size for tablets */
+    padding: 8px; /* Adjusted padding for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    font-size: 12px; /* Adjusted font size for mobile phones */
+    padding: 6px; /* Adjusted padding for small screens */
+  }
+}

@@ -1,0 +1,90 @@
+.navbar {
+  background-color: #f7f9fa; /* Light gray background */
+  color: #333; /* Darker text color for contrast */
+  padding: 10px 20px;
+  position: relative;
+  border-bottom: 1px solid #e1e4e8; /* Subtle border color */
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  color: #333; /* Dark text color */
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #007bff; /* Bright color for links */
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #333; /* Dark color for visibility */
+  font-size: 24px;
+  position: absolute; /* Ensure it's positioned relative to its closest positioned ancestor */
+  right: 20px; /* Adjust positioning as needed */
+  top: 10px; /* Adjust positioning as needed */
+  z-index: 1000; /* Ensure it appears above other elements */
+}
+
+.menu-icon {
+  font-size: 24px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    border-radius: 8px;
+    width: 200px;
+    padding: 10px;
+    background-color: #f7f9fa; /* Match background color */
+    border: 1px solid #e1e4e8; /* Subtle border for dropdown */
+    z-index: 999; /* Ensure it's below the menu-toggle button */
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links a {
+    padding: 10px;
+    border-bottom: 1px solid #e1e4e8; /* Match border color */
+    color: #007bff; /* Bright color for links */
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+.banner-text {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333; /* Dark text color for visibility */
+}
+.navbar .logo img {
+  width: 50px; /* Adjust this size as needed */
+  height: 50px; /* Ensure height matches width for a perfect circle */
+  border-radius: 50%;
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+}
